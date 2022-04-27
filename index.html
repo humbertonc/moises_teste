@@ -9,14 +9,25 @@
       html, body {
       min-height: 100%;
       }
-      body, div, form, input, p { 
+      body, div, form, p { 
       padding: 0;
-      margin: 0;
+      margin: 5px;
       outline: none;
       font-family: Roboto, Arial, sans-serif;
       font-size: 14px;
       color: #666;
       background-color: lightblue;
+      line-height: 22px;
+      }
+      input{ 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      color: rgb(24, 24, 24);
+      background-color: rgb(215, 215, 215);
       line-height: 22px;
       }
       h1 {
@@ -72,7 +83,7 @@
       text-align: middle;
       }
       table {
-      width: 100%;
+      width: 90%;
       }
       textarea {
       width: calc(100% - 6px);
@@ -88,7 +99,8 @@
       -webkit-border-radius: 5px; 
       -moz-border-radius: 5px; 
       border-radius: 5px; 
-      background-color: #095484;
+      font-weight: bold;
+      background-color: #8b8b8b;
       font-size: 16px;
       color: #fff;
       cursor: pointer;
@@ -101,13 +113,24 @@
       word-break: keep-all;
       }
       }
+      textarea {
+      background-color: rgb(237, 237, 237);
+      font-size: 1em;
+      font-family: Verdana, Arial;
+      border: 1px solid rgb(67, 67, 67);
+      }
     </style>
   </head>
     <body>
       <p style="text-align:center;"><img src="wordart.png" alt="centered image" width="480" height="192" ></p>
-      <form onsubmit="calcular()" method="POST">
-        Texto explicando código: <br/>
-        <input type="text" name="funcao" id="funcao" placeholder="Seu codigo aqui"/><br/><br/>
+      <form action="image.html" method="POST">
+        Parabéns Lara!!!!! <br/>
+        Pra comemorar esse dia tão especial, preparamos uma surpresinha pra você!<br/>
+        Mas pra acessar a sua surpresa, primeiro você tem que passar por um desafio, algo que com certeza você estava morrendo de saudade:<br/>
+        Uma questãozinha de LeetCode! Mas não se preocupe por que essa é bem simples.<br/>
+        Dada uma string s, retorne True se ela for um palíndromo e False se não for.<br/>
+        Quando o código estiver terminado, aperte o botão enviar e encontre sua surpresa!!!!<br/>
+        <textarea rows='20' cols="20" placeholder="string isPalindrome(string S) {"></textarea><br/><br/>
         <input type="submit" value="Enviar">
     </form>
 
